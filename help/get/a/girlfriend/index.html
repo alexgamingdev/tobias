@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Kurze Verzögerung für den "Hilfe"-Effekt, dann Weiterleitung -->
+    <meta http-equiv="refresh" content="4; url=https://www.tinder.com">
+    <title>Hilfecenter: Neue Kontakte knüpfen</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .help-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            max-width: 500px;
+            width: 90%;
+        }
+        .icon-box {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #1a73e8;
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+        .loading-text {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #999;
+            font-style: italic;
+        }
+        .dot-flashing {
+            display: inline-block;
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: #1a73e8;
+            animation: dot-flashing 1s infinite linear alternate;
+        }
+        @keyframes dot-flashing {
+            0% { opacity: 0.2; }
+            100% { opacity: 1; }
+        }
+        .btn-manual {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1a73e8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="help-card">
+        <div class="icon-box">🤝</div>
+        <h1>Vernetzung leicht gemacht</h1>
+        <p>
+            Wir unterstützen dich dabei, neue Menschen in deiner Umgebung kennenzulernen. 
+            Unser System sucht nach der passenden Plattform für deine Bedürfnisse.
+        </p>
+        
+        <p class="loading-text">
+            Suche läuft, bitte kurz warten <span class="dot-flashing"></span>
+        </p>
+
+        <a href="https://www.tinder.com" class="btn-manual">Direkt zur Plattform</a>
+    </div>
+
+    <script>
+        // Sicherheitshalber JavaScript-Weiterleitung nach 4 Sekunden
+        setTimeout(function() {
+            window.location.href = "https://www.tinder.com";
+        }, 4000);
+    </script>
+</body>
+</html>
