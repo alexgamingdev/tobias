@@ -3,95 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Kurze Verzögerung für den "Hilfe"-Effekt, dann Weiterleitung -->
-    <meta http-equiv="refresh" content="4; url=https://www.tinder.com">
-    <title>Hilfecenter: Neue Kontakte knüpfen</title>
+    <title>Level Up: Dein Guide | Tobias</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
+            line-height: 1.6;
             color: #333;
+            background-color: #f0f2f5;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 2rem 1rem;
             text-align: center;
         }
-        .help-card {
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
             background: white;
-            padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            max-width: 500px;
-            width: 90%;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        .icon-box {
-            font-size: 50px;
-            margin-bottom: 20px;
+        h2 {
+            color: #2575fc;
+            border-bottom: 2px solid #f0f2f5;
+            padding-bottom: 0.5rem;
         }
-        h1 {
-            font-size: 24px;
-            color: #1a73e8;
-            margin-bottom: 10px;
+        .tip-list {
+            list-style: none;
+            padding: 0;
         }
-        p {
-            line-height: 1.6;
-            color: #666;
-        }
-        .loading-text {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #999;
-            font-style: italic;
-        }
-        .dot-flashing {
-            display: inline-block;
+        .tip-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
             position: relative;
-            width: 10px;
-            height: 10px;
-            border-radius: 5px;
-            background-color: #1a73e8;
-            animation: dot-flashing 1s infinite linear alternate;
         }
-        @keyframes dot-flashing {
-            0% { opacity: 0.2; }
-            100% { opacity: 1; }
+        .tip-list li::before {
+            content: "⚡";
+            position: absolute;
+            left: 0;
         }
-        .btn-manual {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #1a73e8;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 500;
+        .highlight {
+            font-weight: bold;
+            color: #6a11cb;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #666;
         }
     </style>
 </head>
 <body>
 
-    <div class="help-card">
-        <div class="icon-box">🤝</div>
-        <h1>Vernetzung leicht gemacht</h1>
-        <p>
-            Wir unterstützen dich dabei, neue Menschen in deiner Umgebung kennenzulernen. 
-            Unser System sucht nach der passenden Plattform für deine Bedürfnisse.
-        </p>
-        
-        <p class="loading-text">
-            Suche läuft, bitte kurz warten <span class="dot-flashing"></span>
-        </p>
+<header>
+    <h1>Hey Tobias! Dein Guide zum Erfolg</h1>
+    <p>Man muss kein Dauerredner sein, um Eindruck zu hinterlassen.</p>
+</header>
 
-        <a href="https://www.tinder.com" class="btn-manual">Direkt zur Plattform</a>
+<div class="container">
+
+    <div class="card">
+        <h2>1. Die Kraft der Beobachtung</h2>
+        <p>Wenn du nicht gerne viel redest, nutze deine Stärke: <span class="highlight">Zuhören</span>. Mädchen schätzen es sehr, wenn jemand sich merkt, was sie gesagt haben.</p>
+        <ul class="tip-list">
+            <li>Merk dir Details (Lieblingsband, Haustier, Stress in der Schule).</li>
+            <li>Reagiere mit kleinen Taten statt langen Reden (z.B. ein passendes Meme schicken oder eine Kleinigkeit mitbringen).</li>
+        </ul>
     </div>
 
-    <script>
-        // Sicherheitshalber JavaScript-Weiterleitung nach 4 Sekunden
-        setTimeout(function() {
-            window.location.href = "https://www.tinder.com";
-        }, 4000);
-    </script>
+    <div class="card">
+        <h2>2. Körpersprache & Präsenz</h2>
+        <p>Viel Kommunikation findet ohne Worte statt. Dein Auftreten sagt mehr als tausend Sätze.</p>
+        <ul class="tip-list">
+            <li><strong>Blickkontakt:</strong> Ein kurzes Lächeln und Augenkontakt wirken selbstbewusst, nicht creepy.</li>
+            <li><strong>Haltung:</strong> Schultern zurück, Kopf hoch. Wer sich wohlfühlt, wirkt attraktiv.</li>
+            <li><strong>Hygiene:</strong> Ein guter Duft und gepflegtes Äußere sind die einfachsten "Türöffner".</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>3. Gemeinsame Aktivitäten</h2>
+        <p>Suche Situationen, in denen man nicht ständig reden muss, um keine "peinliche Stille" zu riskieren.</p>
+        <ul class="tip-list">
+            <li><strong>Gaming oder Filme:</strong> Man konzentriert sich auf die Sache, das Reden passiert nebenbei.</li>
+            <li><strong>Sport oder Hobbys:</strong> Zusammen etwas machen (Skaten, Zeichnen, Klettern) verbindet ohne Worte.</li>
+            <li><strong>Schreib-Vorteil:</strong> Nutze Chat-Apps. Dort kannst du in Ruhe nachdenken, was du antwortest.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>4. Der "Eisbrecher" für Wortkarge</h2>
+        <p>Du musst keine Reden halten. Ein einfacher Satz reicht oft aus:</p>
+        <blockquote>
+            "Hey, ich bin nicht so der große Redner, aber ich mag deine Art. Wollen wir mal was zusammen zocken/unternehmen?"
+        </blockquote>
+        <p>Ehrlichkeit ist extrem sympathisch und nimmt den Druck aus der Situation.</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Hilfeplattform für Tobias | Bleib du selbst, Tobias!</p>
+</footer>
+
 </body>
 </html>
