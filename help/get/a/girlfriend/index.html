@@ -3,116 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level Up: Dein Guide | Tobias</title>
+    <title>Projekt: Sie & Tobias</title>
     <style>
+        :root {
+            --main-color: #ff4b2b;
+            --secondary-color: #ff416c;
+            --bg-color: #1a1a2e;
+        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f0f2f5;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: #e0e0e0;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
         header {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
-            padding: 2rem 1rem;
+            background: linear-gradient(to right, var(--main-color), var(--secondary-color));
+            padding: 3rem 1rem;
             text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         }
         .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+            max-width: 700px;
+            margin: -2rem auto 3rem;
+            padding: 0 1.5rem;
         }
         .card {
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #2575fc;
-            border-bottom: 2px solid #f0f2f5;
-            padding-bottom: 0.5rem;
-        }
-        .tip-list {
-            list-style: none;
-            padding: 0;
-        }
-        .tip-list li {
-            margin-bottom: 1rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-        .tip-list li::before {
-            content: "⚡";
-            position: absolute;
-            left: 0;
-        }
-        .highlight {
-            font-weight: bold;
-            color: #6a11cb;
-        }
-        footer {
-            text-align: center;
+            background: #16213e;
+            border-left: 5px solid var(--main-color);
+            border-radius: 8px;
             padding: 2rem;
-            font-size: 0.9rem;
-            color: #666;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        h2 { color: var(--secondary-color); margin-top: 0; }
+        .highlight { color: #00d2ff; font-weight: bold; }
+        .action-box {
+            background: rgba(255, 75, 43, 0.1);
+            border: 1px dashed var(--main-color);
+            padding: 1rem;
+            border-radius: 5px;
+            font-style: italic;
+        }
+        .tag {
+            display: inline-block;
+            background: var(--main-color);
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Hey Tobias! Dein Guide zum Erfolg</h1>
-    <p>Man muss kein Dauerredner sein, um Eindruck zu hinterlassen.</p>
+    <h1>Der "Silent Pro" Plan</h1>
+    <p>Sie ist süß & lustig? So zeigst du ihr, dass du sie magst.</p>
 </header>
 
 <div class="container">
 
     <div class="card">
-        <h2>1. Die Kraft der Beobachtung</h2>
-        <p>Wenn du nicht gerne viel redest, nutze deine Stärke: <span class="highlight">Zuhören</span>. Mädchen schätzen es sehr, wenn jemand sich merkt, was sie gesagt haben.</p>
-        <ul class="tip-list">
-            <li>Merk dir Details (Lieblingsband, Haustier, Stress in der Schule).</li>
-            <li>Reagiere mit kleinen Taten statt langen Reden (z.B. ein passendes Meme schicken oder eine Kleinigkeit mitbringen).</li>
+        <span class="tag">Strategie 1</span>
+        <h2>Lach über ihre Witze</h2>
+        <p>Wenn sie lustig ist, ist das dein Jackpot. Du musst keine eigenen Witze reißen. Dein <span class="highlight">ehrliches Lachen</span> ist für sie die beste Bestätigung.</p>
+        <div class="action-box">
+            Pro-Tipp: Such beim Lachen kurz ihren Blickkontakt. Das signalisiert: "Ich finde DICH lustig."
+        </div>
+    </div>
+
+    <div class="card">
+        <span class="tag">Strategie 2</span>
+        <h2>Die "Kleine Gesten" Methode</h2>
+        <p>Da du nicht gerne redest, lass Taten sprechen. Wenn sie etwas erwähnt, was sie mag (z.B. eine bestimmte Süßigkeit oder ein Spiel), bring es ihr mal mit oder schick ihr einen Link dazu.</p>
+        <ul style="list-style-type: '✔ '; padding-left: 20px;">
+            <li>"Hab das gesehen und an dich gedacht." (Reicht völlig als Satz!)</li>
+            <li>Ein Meme schicken, das genau ihren Humor trifft.</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>2. Körpersprache & Präsenz</h2>
-        <p>Viel Kommunikation findet ohne Worte statt. Dein Auftreten sagt mehr als tausend Sätze.</p>
-        <ul class="tip-list">
-            <li><strong>Blickkontakt:</strong> Ein kurzes Lächeln und Augenkontakt wirken selbstbewusst, nicht creepy.</li>
-            <li><strong>Haltung:</strong> Schultern zurück, Kopf hoch. Wer sich wohlfühlt, wirkt attraktiv.</li>
-            <li><strong>Hygiene:</strong> Ein guter Duft und gepflegtes Äußere sind die einfachsten "Türöffner".</li>
-        </ul>
+        <span class="tag">Strategie 3</span>
+        <h2>Schreiben statt Reden</h2>
+        <p>Im Chat hast du keinen Zeitdruck. Nutze das! Sei dort derjenige, der mal nachfragt: <span class="highlight">"Wie war dein Tag?"</span>. Lustige Mädchen lieben es, wenn jemand ihnen eine Bühne gibt, um zu erzählen.</p>
     </div>
 
     <div class="card">
-        <h2>3. Gemeinsame Aktivitäten</h2>
-        <p>Suche Situationen, in denen man nicht ständig reden muss, um keine "peinliche Stille" zu riskieren.</p>
-        <ul class="tip-list">
-            <li><strong>Gaming oder Filme:</strong> Man konzentriert sich auf die Sache, das Reden passiert nebenbei.</li>
-            <li><strong>Sport oder Hobbys:</strong> Zusammen etwas machen (Skaten, Zeichnen, Klettern) verbindet ohne Worte.</li>
-            <li><strong>Schreib-Vorteil:</strong> Nutze Chat-Apps. Dort kannst du in Ruhe nachdenken, was du antwortest.</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h2>4. Der "Eisbrecher" für Wortkarge</h2>
-        <p>Du musst keine Reden halten. Ein einfacher Satz reicht oft aus:</p>
-        <blockquote>
-            "Hey, ich bin nicht so der große Redner, aber ich mag deine Art. Wollen wir mal was zusammen zocken/unternehmen?"
-        </blockquote>
-        <p>Ehrlichkeit ist extrem sympathisch und nimmt den Druck aus der Situation.</p>
+        <span class="tag">Der Move</span>
+        <h2>Ehrlichkeit gewinnt</h2>
+        <p>Du musst kein cooler Redner sein. Wenn du merkst, dass sie viel redet und du eher ruhig bist, sag einfach mal:</p>
+        <div class="action-box">
+            "Ich bin zwar eher der ruhige Typ, aber ich hör dir echt gern zu. Du bist lustig."
+        </div>
+        <p>Das ist ein Kompliment, das sie so schnell nicht vergisst.</p>
     </div>
 
 </div>
 
-<footer>
-    <p>&copy; 2026 Hilfeplattform für Tobias | Bleib du selbst, Tobias!</p>
+<footer style="text-align: center; color: #666; padding-bottom: 2rem;">
+    Go for it, Tobias!
 </footer>
 
 </body>
